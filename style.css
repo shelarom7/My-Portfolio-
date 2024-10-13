@@ -1,0 +1,1040 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  
+ 
+}
+
+.hero-section
+{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.left {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end; /* Align items at the end (bottom) */
+    border-right: 2Px solid grey;
+    width: 7%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    z-index: 1; /* Adjust the value as needed */
+}
+
+.btn-nav {
+    margin-bottom: 7%;
+    position: relative;
+    margin-top: auto; /* Use margin-top: auto to push the button to the bottom */
+    outline: none;
+    border: none;
+    display: block;
+  }
+
+  .custom-offcanvas .offcanvas {
+    width: 60.5%;
+    background-color: rgba(38, 38, 38, 0.824);
+    color: rgb(255, 0, 0);
+    justify-content: center;
+    font-family: oswald;
+    
+}
+
+
+
+.offcanvas-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%; /* Ensure the container takes the full height */
+}
+
+.offcanvas-body h2 {
+  margin: 0; /* Remove default margin on h2 */
+}
+
+.offcanvas-body h2 a {
+  line-height: 2; /* Adjust the line height as needed */
+  font-family: ubuntu, helvetica;
+  font-size: larger;
+  color: white;
+}
+
+.logo {
+    max-width: 170%; /* Set a maximum width for the logo */
+   /* Maintain the aspect ratio */
+    max-height: 170%; /* Set a maximum height for the logo */ /* Push the logo to the top by using margin-bottom: auto */
+    margin-top: -10; /* Adjust the margin to remove the space at the top */
+  align-self: center; /* Center the image horizontally within the left div */
+  padding-top: -10px; /* Optionally, add padding to the top for additional space */
+  }
+
+  .left-txt {
+    display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  }
+  
+  .left-txt h2,
+  .left-txt h3 {
+    margin: 0;
+    white-space: nowrap; /* Prevent text from wrapping */
+    line-height: 1;
+  }
+  
+  /* Optionally, adjust font size or other styles as needed */
+  .left-txt h2 {
+    font-family: Oswald;
+    writing-mode:vertical-lr;
+    transform: rotate(180deg);
+    font-size: 24px;
+  }
+  
+  .left-txt h3 {
+    font-family: karla;
+    color: grey;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-size: 18px;
+  }
+  
+
+
+
+
+/*Center part*/
+.center{
+    
+    margin-left: calc(7% + 3px); /* Add a 3px gap */
+    flex:1 0 53%;
+    height: 100%;
+    background-color:rgb(255, 255, 255);
+}
+
+.animated-text{
+font-size: 44px;
+font-weight: 600;
+min-width: 280px;
+}
+
+.animated-text span{
+  position: relative;
+}
+
+.animated-text span::before{
+  content: "I’m OM Shelar.";
+  color: rgb(0, 0, 0);
+  animation: words 20s infinite;
+}
+
+.animated-text span::after{
+  content: "";
+  position: absolute;
+  width:calc(100% + 8px);
+  height: 50px;
+  background-color: rgb(255, 255, 255);
+  border-left: 2px solid red;
+  right: -8px;
+  animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor{
+  to{
+    border-left: 2px solid #ff7f5000;
+  }
+}
+
+@keyframes words{
+  0%, 100%{
+    content:"I’m OM Shelar.";
+  }
+}
+
+@keyframes typing{
+  10%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
+    width: 0;
+  }
+  5%,20%,25%,40%,45%,60%,65%,80%,85%{
+    width: calc(100% + 8px);
+  }
+}
+
+h1 {
+    
+    margin: 8% 0% 0% 10%;
+    font-family: Oswald, sans-serif;
+    font-size: 44px;
+    line-height: 52px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+
+  .intro a{
+    color: red;
+  }
+  
+  .intro p{
+    
+    margin: 5% 10% 0% 10%;
+    color: grey;
+    text-align: justify;
+    font-family: karla, sans-serif;
+  }
+
+  .intro .signature{
+        margin: 5% 10% 0% 10%;
+  }
+
+  .location {
+    margin: 2% 10% 0% 10%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .location-icon {
+    width: 50px;
+    height: auto;
+    margin-right: 10px; /* Adjust the spacing between the icon and text */
+  }
+  
+  .loc-txt {
+    display: flex;
+    flex-direction: column;
+  }
+  .text-block{
+    font-family: karla, sans-serif;
+    color: grey;
+  }
+  .location-text{
+    font-family: Oswald, sans-serif;
+    color: black;
+    font-size: 120%;
+  }
+  
+  .text-block,
+  .location-text {
+    margin: 0; /* Reset default margin */
+    padding: 0;
+  }
+
+
+.contact-e{
+    font-family: Oswald,sans-serif;
+    margin-top: 5%;
+    display: flex;
+    margin-left: 10%;
+    font-size: 22px;
+
+}
+
+a{
+    margin-left: 1%;
+    color: black;
+    text-decoration: none;
+}
+
+.right{
+    flex: 1 0 40%;
+    height: 100%;
+    background-image: url(./img/om.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/* Add styles for the arrow container */
+.arrow-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 18px; /* Set the width of the arrow container equal to the image width */
+}
+
+.scroll-arrow {
+    width: 100%; /* Set the width of the arrow image to 100% within the container */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.arrow{
+position: absolute;
+top: 80%;
+bottom: 50%;
+right: 93%;
+background-color: rgb(255, 136, 84);
+padding: 2%;
+}
+
+
+.gap1{
+    height: 10vh;
+    background-color: rgb(255, 255, 255);
+}
+
+.gap2 {margin-left: 3%;
+  height: 120vh;
+  width: 100%;
+  display: flex;
+background-image: url(img/drift.JPG);
+background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    background-attachment: fixed;
+
+}
+
+.gleft {
+  background-color: rgb(253, 255, 205);
+  flex: 2;
+}
+
+.gleft h3{
+  margin-left: 25%;
+  margin-top: 10%;
+  color: #ff0000;
+  
+
+}
+
+.gmid {
+  
+  flex: 1.57;
+  display: flex;
+  flex-direction: column;
+}
+
+.mid-top {
+  background-color: rgb(254, 255, 218);
+  height: 15%;
+  flex:1;
+}
+
+.mid-bottom {
+  background-color: rgb(145, 145, 145);
+  flex:1;
+}
+
+.mid_m{
+    height: 80%;
+   
+}
+
+.gright {
+  background-color: rgb(145, 145, 145);
+  flex: 0.3;
+}
+/*----------------skills section--------------*/
+.skills{
+  margin-left: 3%;
+  height: 87vh;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+
+
+.container {
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  height: 0vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.container .card {
+  margin-top: 1%;
+  position: relative;
+  width: 259px;
+  background: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  border: rgb(255, 255, 255);
+  text-align: center;
+  overflow: hidden;
+  transition: 0.5s;
+  
+}
+
+.container .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, .5);
+}
+
+.container .card:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.percent {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 70px #000000;
+  background: #ffffff;
+  z-index: 1000;
+}
+
+.percent .number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.percent .number h2 {
+  color: #000000;
+  font-weight: 700;
+  font-size: 40px;
+  transition: 0.5s;
+}
+
+.card:hover .percent .number h2 {
+  color: #000000;
+  font-size: 60px;
+}
+
+.percent .number h2 span {
+  font-size: 24px;
+  color: #000000;
+  transition: 0.5s;
+}
+
+.card:hover .percent .number h2 span {
+  color: #000000;
+}
+
+.text {
+  font-family: ubuntu;
+  position: relative;
+  color: #202020;
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.card:hover .text {
+  color: #202020;
+}
+
+svg {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  z-index: 1000;
+}
+
+svg circle
+{
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: #191919;
+  stroke-width: 10;
+  stroke-linecap: round;
+  transform: translate(5px, 5px);
+}
+
+svg circle:nth-child(2) {
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+}
+
+.card:nth-child(1) svg circle:nth-child(2) {
+  stroke-dashoffset: calc(440 - (440 * 90) / 100);
+  stroke: #00e1ff;
+}
+
+.card:nth-child(2) svg circle:nth-child(2) {
+  stroke-dashoffset: calc(440 - (440 * 85) / 100);
+  stroke: #00e1ff;
+}
+
+.card:nth-child(3) svg circle:nth-child(2) {
+  stroke-dashoffset: calc(440 - (440 * 60) / 100);
+  stroke: #00e1ff;
+}
+
+.card:nth-child(4) svg circle:nth-child(2) {
+  stroke-dashoffset: calc(440 - (440 * 60) / 100);
+  stroke: #00e1ff;
+}
+
+.card:nth-child(5) svg circle:nth-child(2) {
+  stroke-dashoffset: calc(440 - (440 * 60) / 100);
+  stroke: #00e1ff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.gap3{
+  height: 10vh;
+  background-color: rgb(255, 255, 255);
+}
+
+/*----------------SECTION-1--------------*/
+
+.section-1{
+  margin-left: calc(7% + 3px); /* Add a 3px gap */
+  height: 140vh;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+
+}
+
+.sec-2{
+    margin-left: calc(7%); /* Add a 3px gap */
+    height: 90vh;
+    position: relative;
+    background-image: url(img/A2.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    min-height: 40vh; /* Ensure the container takes at least the full height of the viewport */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+.sec-2 .card h5{
+  font-weight: 700;
+}
+
+.sec-2 .card .card-text{
+  font: ubuntu, helvetica, sans-serif;
+}
+
+.sec-2 .card{
+    margin-right: auto;
+    margin-left: 2%;
+}
+
+.prac{
+  margin-left: calc(7%); /* Add a 3px gap */
+    height: 90vh;
+    position: relative;
+    background-image: url(img/A2.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    min-height: 40vh; /* Ensure the container takes at least the full height of the viewport */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prac .card{
+  margin-right: auto;
+  margin-left: 2%;
+}
+
+
+.sec-3{
+  height: 100vh;
+  background-color: rgb(105, 105, 105);
+}
+
+
+
+.section-4{
+    margin-left: calc(7% ); /* Add a 3px gap */
+    height: 100vh;
+    background-color: rgb(184, 184, 184);
+    display: flex;
+
+}
+
+.b1{
+    height: 100%;
+    width: 42%;
+    background-color: rgb(255, 255, 255);
+
+    padding: 2% 3%; /* Adjust padding to control spacing */
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.b1 h1{
+  margin: 0; /* Remove default margin on h1 */
+  padding: 0; /* Remove default padding on h1 */
+  font-family: ubuntu, helvetica;
+  margin-bottom: 4%;
+}
+
+
+.b1 p{
+    text-align: left;
+    font-family: karla;
+}
+
+.b2{
+    height: 100%;
+    width: 23%;
+    background-color: rgb(255, 255, 255);
+    padding: 2% 3%; /* Adjust padding to control spacing */
+    box-sizing: border-box;
+  
+}
+.skill-1{
+  display: flex;
+  background-repeat: no-repeat;
+  margin-bottom:5%;
+  margin-top: 5%;
+}
+.skill-1 img{
+  margin-right: 10%;
+}
+
+.skill-2{
+  display: flex;
+  background-repeat: no-repeat;
+  margin-bottom:5%;
+}
+.skill-2 img{
+  margin-right: 10%;
+}
+
+.skill-3{
+  display: flex;
+  background-repeat: no-repeat;
+  margin-bottom:5%;
+}
+.skill-3 img{
+  margin-right: 8%;
+}
+
+.skill-4{
+  display: flex;
+  background-repeat: no-repeat;
+  margin-bottom:5%;
+}
+.skill-4 img{
+  margin-right: 10%;
+}
+
+.skill-5{
+  display: flex;
+  background-repeat: no-repeat;
+  margin-bottom:5%;
+
+}
+.skill-5 img{
+  margin-right: 10%;
+  margin-left: 0%;
+}
+
+.b2 h1{
+  margin: 0; /* Remove default margin on h1 */
+  padding: 0; /* Remove default padding on h1 */
+  font-family: ubuntu, helvetica;
+  margin-bottom: 4%;
+}
+
+
+.b2 h5{
+margin-top: 3%;
+text-align: left;
+line-height: 150%;
+font-family: ubuntu, helvetica, sans-serif;
+font-weight: bolder;
+}
+.b2 p{
+  text-align: center;
+  font-size: larger;
+  font: bolder;
+  font-family: karla;
+  line-height: 200%;
+
+}
+.b3 {
+  height: 100%;
+  width: 35%;
+  background-color: rgb(255, 255, 255);
+  padding: 2% 2%; /* Adjust padding to control spacing */
+  text-align: center;
+  box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+.b3 h1 {
+  margin: 0; /* Remove default margin on h1 */
+  padding: 0; /* Remove default padding on h1 */
+  font-family: ubuntu, helvetica, sans-serif;
+  margin-bottom: 4%;
+}
+
+.b3 h5{
+  text-align: left;
+  font-family: ubuntu, helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 125%;
+  }
+
+  .b3 h6{
+    text-align: left;
+    font-size: 90%;
+    font-family: ubuntu, helvetica, sans-serif;
+
+    color: rgb(255, 136, 84);
+  }
+
+  .b3 p{
+    text-align: justify;
+    font-family: karla;
+    line-height: 125%;
+}
+
+.b3 hr {
+  border: none; /* Remove default border */
+  height: 1.5px; /* Set the thickness of the line */
+  background-color: #000000; /* Set the color of the line */
+  margin: 10px 0; /* Adjust margin as needed */
+}
+  
+
+
+
+/* General Styles */
+body {
+  font-family: Oswald, sans-serif;
+  line-height:  1.6;
+  color: #000000;
+  margin:  0;
+  padding:  0;
+}
+
+
+/* Contact Us Section Styles */
+.contact-us-section {
+  margin-left: 7%;
+  font-family: oswald;
+  background-image: url(img/.jpeg);
+  background-color: #ffffff;
+  padding:  20px  0;
+}
+
+.contact-us-section h2 {
+  color: #f9f9f9;
+  margin-bottom:  20px;
+}
+
+.contact-us-section .form-group label {
+  font-weight: bold;
+  margin-bottom:  5px;
+}
+
+.contact-us-section .form-group input,
+.contact-us-section .form-group textarea {
+  border:  1px solid #ced4da;
+  border-radius:  0.25rem;
+  padding:  10px;
+  margin-bottom:  20px;
+}
+
+.contact-us-section .form-group button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding:  10px  20px;
+  border-radius:  0.25rem;
+  cursor: pointer;
+}
+/*##########----FOOTER----############*/
+
+.footer{
+  margin-left: 7%;
+  height:60vh;
+  background-color: rgb(40, 40, 40);
+  display: flex;
+  color: white;
+  
+}
+
+.footer h3{
+  text-align: center;
+  font-family: ubuntu;
+  margin-bottom: 10%;
+}
+
+.d1{
+  height: 65vh;
+  width: 35%;
+  background-color: rgb(40, 40, 40);
+  margin-left: 5%;
+  margin-top: 5%;
+  
+}
+
+.d1 h6{
+  font-size: 100%;
+  font-family: karla;
+  margin-top: 8%;
+  margin-left: 5%;
+  text-align: left;
+  font-weight: 300;
+  color: #b2b2b2;
+}
+
+.d1 h2{
+  margin-top: 25%;
+  font-family: audiowide;
+  text-align: center;
+  font-size: 150%;
+  
+}
+.d2{
+  height: 65vh;
+  width: 25%;
+  background-color: rgb(40, 40, 40);
+  margin-left: 5%;
+  margin-top: 5%;
+  display: block;
+}
+
+.d2 a{
+  text-decoration: none;
+  color: white;
+  margin-top: 8%;
+  margin-left: 10%;
+  text-align: left;
+}
+
+.d3{
+  height: 65vh;
+  width: 25%;
+  background-color: rgb(40, 40, 40);
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.d3 h6{
+  text-align: center;
+  font-size: 100%;
+  font-family: karla;
+  margin-top: 8%;
+}
+
+.d4{
+  height: 65vh;
+  width: 25%;
+  background-color: rgb(40, 40, 40);
+  margin-left: 5%;
+  margin-top: 5%;
+  margin-right: 5%;
+}
+
+.d5{
+  height: 20vh;
+  width: 100%;
+  background-color: rgb(40, 40, 40);
+}
+
+.d5 h5{
+  margin-left: 5%;
+  font-family: oswald;
+  color: red;
+}
+
+.footer1{
+  display: flex;
+  height: 20vh;
+  width: 100%;
+  background-color: rgb(0, 148, 181);
+  
+}
+
+
+
+
+
+
+/*##########----PROJECT STYLING----##############################################################################################*/
+
+
+.project{
+  
+  background-color: rgb(255, 255, 255);
+}
+.project-hero
+{
+    height: 130vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.project-hero h1{
+  margin-top: 20%;
+  font-size: 1800%;
+  text-align: center;
+  justify-content: center;
+}
+
+.p_sec-1{
+  margin-left: calc(7% + 3px); /* Add a 3px gap */
+  height: 90vh;
+  position: relative;
+  background-image: url(img/p1.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  background-attachment: fixed;
+
+  min-height: 40vh; /* Ensure the container takes at least the full height of the viewport */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  
+}
+
+.p_sec-1 .card{
+  margin-right: auto;
+  margin-left: 2%;
+}
+
+.p_sec-2{
+  height: 100vh;
+  width: 100%;
+}
+
+.p_sec-3{
+  margin-left: calc(7% + 3px); /* Add a 3px gap */
+  height: 90vh;
+  position: relative;
+  background-image: url(img/p2.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  background-attachment: fixed;
+
+  min-height: 40vh; /* Ensure the container takes at least the full height of the viewport */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  
+}
+
+.p_sec-3 .card{
+  margin-right: auto;
+  margin-left: 2%;
+}
+
+.p_sec-4{
+  height: 100vh;
+  width: 100%;
+}
+
+.project-hero img[alt="arrow-p"] {
+  position: absolute;
+  bottom: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Add this CSS to your existing styles */
+.arrow-button {
+  width: 50px; /* Set the width of the button */
+  height: 50px; /* Set the height of the button */
+  background: none; /* Remove default button styling */
+  border: none; /* Remove default button border */
+  padding: 0; /* Remove default button padding */
+  cursor: pointer; /* Add a pointer cursor to indicate interactivity */
+}
+
+
+/***** CONTACT STYLING *****/
+.contact-hero
+{
+    display: flex;
+    position: relative;
+}
+
+.container{
+  display: inli;
+}
+
+
+
+.col{
+  background-color: #007bff;
+  width: 50%;
+}
+
+.hero{
+  margin-left: 7%;
+  display: flex;
+}
+.form{
+  height: 100vh;
+  width: 80%;
+ background-color: rgb(255, 255, 255);
+  
+}
+
+.imgl{
+  height: 100vh;
+  width: 40%;
+  background-color: rgb(255, 255, 255);
+  
+  
+}
+
+
+
+
+
+
